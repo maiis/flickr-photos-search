@@ -50,7 +50,6 @@ $(function() {
 					'</div>'
 				);
 			} else {
-				console.warn("data",data);
 				$.each(data.photos.photo, function(i,item){
 					src = 'http://farm'+ item.farm +'.static.flickr.com/'+ item.server +'/'+ item.id +'_'+ item.secret +'_q.jpg';
 					link = 'http://www.flickr.com/photos/'+item.owner+'/'+item.id;
