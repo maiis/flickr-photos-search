@@ -17,7 +17,6 @@ body {
 
 /* Everything but the jumbotron gets side spacing for mobile first views */
 .header,
-.marketing,
 .footer {
   padding-right: 15px;
   padding-left: 15px;
@@ -77,10 +76,10 @@ body {
     }
 
     .thumbnail {
-      background-size: 100% auto;
-      height: 120px;
-      width: 120px;
       display: inline-block;
+      width: 120px;
+      height: 120px;
+      background-size: 100% auto;
     }
   }
 }
@@ -90,6 +89,15 @@ body {
 @media screen and (min-width: 768px) {
   .container {
     max-width: 730px;
+
+    .jumbotron {
+      padding: 20px;
+      border-bottom: 0;
+
+      h1 {
+        font-size: 2em;
+      }
+    }
   }
 
   /* Remove the padding we set earlier */
@@ -101,9 +109,5 @@ body {
   /* Space out the masthead */
   .header {
     margin-bottom: 30px;
-  }
-  /* Remove the bottom border on the jumbotron for visual effect */
-  .jumbotron {
-    border-bottom: 0;
   }
 }

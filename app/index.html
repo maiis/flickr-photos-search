@@ -3,73 +3,70 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>flickr search</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width">
-        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-        <!-- build:css(.tmp) styles/main.css -->
-        <link rel="stylesheet" href="styles/main.css">
-        <!-- endbuild -->
-        <!-- build:js scripts/vendor/modernizr.js -->
-        <script src="bower_components/modernizr/modernizr.js"></script>
-        <!-- endbuild -->
-    </head>
-    <body>
-        <!--[if lt IE 10]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+  <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <title>flickr search</title>
+      <meta name="description" content="">
+      <meta name="viewport" content="width=device-width">
+      <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+      <!-- build:css(.tmp) styles/main.css -->
+      <link rel="stylesheet" href="styles/main.css">
+      <!-- endbuild -->
+      <!-- build:js scripts/vendor/modernizr.js -->
+      <script src="bower_components/modernizr/modernizr.js"></script>
+      <!-- endbuild -->
+  </head>
+  <body>
+    <!--[if lt IE 10]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
 
-
-        <div class="container">
-            <div class="header">
-                <ul class="nav nav-pills pull-right">
-                    <li class="active"><a href="#">Home</a></li>
-                    <li><a href="#">Github</a></li>
-                    <li><a href="http://twitter.com/maiis">Twitter</a></li>
-                </ul>
-                <h3 class="text-muted">Emmanuel Vuigner</h3>
-            </div>
-
-            <div class="jumbotron">
-                <h1>Flickr Photos Search</h1>
-                <p class="lead">Experimenting Flickr Api.</p>
-                <p>
-                    <form class="form-inline" role="form" id="searchForm">
-                      <div class="form-group">
-                        <input class="form-control input-lg" type="search" placeholder="ex: Valais Landscape" id="searchField" />
-                      </div>
-                       <button type="submit" class="btn btn-primary btn-lg">Search</button>
-                    </form>
-                </p>
-            </div>
-
-            <div class="container main-container">
-              <div id="images" class="images-wrapper row"></div>
-              <ul id="pagination"></ul>
-            </div>
-
-            <div class="footer">
-                <p>♥ from maiis</p>
-            </div>
-
+    <div class="container">
+        <div class="header">
+            <ul class="nav nav-pills pull-right">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="http://github.com/maiis/flickr-photos-search">Github</a></li>
+                <li><a href="http://twitter.com/maiis">Twitter</a></li>
+            </ul>
+            <h3 class="text-muted">Emmanuel Vuigner</h3>
         </div>
 
+        <div class="jumbotron">
+            <h1>Flickr Photos Search</h1>
+            <p class="lead">Experimenting Flickr Api.</p>
+            <p>
+                <form class="form-inline" role="form" id="searchForm">
+                  <div class="form-group">
+                    <input class="form-control input-lg" type="search" placeholder="ex: Valais Landscape" id="searchField" />
+                  </div>
+                   <button type="submit" class="btn btn-primary btn-lg">Search</button>
+                </form>
+            </p>
+        </div>
 
-        <!-- build:js scripts/vendor.js -->
-        <!-- bower:js -->
-        <script src="bower_components/jquery/jquery.js"></script>
-        <!-- endbower -->
-        <!-- endbuild -->
+        <div class="container main-container">
+          <div id="images" class="images-wrapper row"></div>
+          <ul id="pagination"></ul>
+        </div>
 
-        <!-- build:js scripts/main.js -->
-        <script src="scripts/main.js"></script>
-        <!-- endbuild -->
+        <div class="footer">
+            <p>♥ from maiis</p>
+        </div>
+    </div>
 
-        <!-- build:js scripts/plugins.js -->
-        <script src="bower_components/bootstrap-paginator/src/bootstrap-paginator.js"></script>
-        <!-- endbuild -->
-</body>
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/jquery.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+
+    <!-- build:js scripts/plugins.js -->
+    <script src="bower_components/bootstrap-paginator/src/bootstrap-paginator.js"></script>
+    <!-- endbuild -->
+  </body>
 </html>
